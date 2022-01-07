@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> login page </title>
+        <style>
+            body {
+                background-image: url('static/icon/mainpage.jpg');
+            }
+            div.in_center{
+                position: absolute;
+                text-align-last: justify;
+                text-align: justify;
+                top:40%;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #f1f1f1;
+            }
+            p{
+                
+                text-align: center;
+                color: white;
+                
+            }
+        </style>
+    </head>
+    <body>
+        {% block content %}
+        <div class="in_center">
+            <form action="#" method="post" >
+                <p>Name: <input type = "text" name = "nm" /></p>
+                <p>Password: <input type = "text" name = "pd" /></p>
+                <p>DoubleCheck: <input type = "text" name = "pd1" /></p>
+                <p>YourBirth: <input type= "text" name = "birth" /></p>
+                <p><input type = "submit" name = "submit" /></p>
+            </form>
+        </div>
+        {% endblock %}
+        <p >birth example : 19990101 it means 1999/01/01</p>
+        <p >password need to input at least 8 characters </p>
+    </body>
+
+
+
+

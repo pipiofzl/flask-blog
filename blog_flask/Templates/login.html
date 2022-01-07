@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> login page </title>
+        <style>
+            body {
+                background-image: url('static/icon/mainpage.jpg');
+            }
+            div.in_center{
+                position: absolute;
+                top:40%;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #f1f1f1;
+            }
+        </style>
+    </head>
+    <body>
+        {% block content %}
+        <div class="in_center">
+            <form action="#" method="post" >
+                <p>Name &nbsp;&nbsp;&nbsp; &nbsp; : <input type = "text" name = "nm" /></p>
+                <p>Password : <input type = "text" name = "pd" /></p>
+                <p><input type = "submit" name = "submit" /></p>
+            </form>
+        </div>
+        {% endblock %}
+    </body>
+
+
+
+

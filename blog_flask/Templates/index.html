@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog</title>
+        <style>
+            body {background-color: #f1f1f1;
+                padding:0;
+                margin:0;
+            }
+            .container {
+                width : 100%;
+                margin-right: auto;
+                margin-left: auto; 
+                padding:0;
+                margin:0;
+            }
+
+            .site-header {
+                background-color: rgb(15, 15, 15);
+            }
+
+            .site-main {
+                background-color: #fff;
+            }
+
+            .site-footer {
+                background-color: #082b36;
+            }
+
+            .site-header-menu {
+                width:100%;
+                height: 45px;
+                text-align:right;
+            }
+
+            .site-header-menu ul {
+                padding:0px; 
+                list-style-type:none;
+                text-align:right;
+            }
+
+            .site-header-menu ul li {
+                float:right;
+                width:200px;
+                height:35px;
+                line-height:35px;
+                text-align:center;
+            }
+
+            .site-header-menu ul li a {
+                text-decoration:none; 
+                color:white; 
+                display:block;
+            }
+
+            .site-header-menu ul li a:hover {
+                background:#fff; 
+                color:#000;
+            
+            }
+
+            .site-header-menu ul li a:active {
+                background:#fff; 
+                color:#000;
+            }
+
+            .site-header-menu ul li a:focus {
+                background:#fff; 
+                color:#000;
+            }
+
+            .site-header-icon{
+                text-align :right ; 
+                border : 0;
+            }
+
+            .site-footer-inner {
+
+                height: 30px;
+                text-align:right;
+                color:rgb(238, 226, 226);
+            }
+
+            .site-main-inner::after {
+                content: "";
+                display: block;  /**必要**/
+                clear: both;
+                
+            }
+
+            .content {
+                height: 100%;
+                width: 20%;
+                background-color: #ccc;
+                float: left;
+            }
+
+            .sidebar {
+                height: 100% ;
+                width: 100%;
+                background-color: #ccc;
+                float: right;
+                
+            }
+
+            p1 { 
+			  	font-size: 48px;
+			  	display: block;
+			  	text-align:center;
+			  	font-family:monospace;
+			}
+
+            .words{
+                font-size: 50px;
+                letter-spacing: 10px;
+                position: absolute;
+                top:40%;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #f1f1f1;
+            }
+
+	        .imgw{
+                position: relative;
+            } 
+        </style>
+    </head>
+
+    <body>
+
+        <header class="container site-header">
+
+            <div class="site-header-menu"> 
+                <ul>
+                    <li>
+                        <a href="/login">Login </a>
+                    </li>
+                    <li>
+                        <a href="/CreateAccount">CreateAccount </a>
+                    </li>
+                </ul> 
+            </div>
+        </header>
+        <div class="container site-main">
+            <div class="site-main-inner">
+                <div class="imgw">
+                    <img src="static/icon/mainpage.jpg" width="100%" height="100%"></img>
+                    <div class="words">Welcome to My blog</div>
+                </div>
+            </div>
+        </div>
+        <footer class="container site-footer">
+        </footer>
+
+    </body>
+
+</html>

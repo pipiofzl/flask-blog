@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>content</title>
+    </head>
+    <body style = "background-color:gray">
+        <style type="text/css">
+
+            .site-header {
+                background-color: rgb(15, 15, 15);
+            }
+
+            .site-main {
+                background-color: #fff;
+            }
+
+            .container {
+                width : 100%;
+                margin-right: auto;
+                margin-left: auto; 
+                padding:0;
+                margin:0;
+            }
+
+            .site-header-menu {
+                width:100%;
+                height: 35px;
+                text-align:right;
+            }
+
+            .site-header-menu ul {
+                padding:0px; 
+                list-style-type:none;
+                text-align:right;
+            }
+
+            .site-header-menu ul li {
+                float:right;
+                width:200px;
+                height:35px;
+                line-height:35px;
+                text-align:center;
+            }
+
+            .site-header-menu ul li a {
+                text-decoration:none; 
+                color:white; 
+                display:block;
+            }
+
+            .site-header-menu ul li a:hover {
+                background:#fff; 
+                color:#000;
+            
+            }
+
+            .site-header-menu ul li a:active {
+                background:#fff; 
+                color:#000;
+            }
+
+            .site-header-menu ul li a:focus {
+                background:#fff; 
+                color:#000;
+            }
+
+            #sitebody{
+                width:0 auto;
+                margin:0 auto;
+                font-size:13px;
+            }
+
+            #header{
+                background-color:#FFD4D4;
+                height:80px;
+                text-align:center;
+                line-height:80px;
+            }
+
+            #sidebar_left{
+                background-color:#FFECC9;
+                width:120px;
+                height:0 auto;
+                text-align:center;
+                line-height:0 auto;
+                float:left;
+            }
+            
+            #content{
+                margin-left:120px;
+                margin-right:0px;
+                height:40 auto;
+                background-color:#F2FFF2;
+                text-align:center;
+                line-height:40 auto;
+            }
+
+            #footer{
+                clear:both;
+                background-color:#808080;
+                height:0 auto;
+                text-align:center;
+                line-height:0 auto;
+            }
+
+            #newpost{
+                width: 100%;
+                height:0 auto;
+            }
+
+            textarea{
+              width:100%;
+              box-sizing: border-box;
+            }
+
+        </style>
+
+        <header class="container site-header">
+            <div class="site-header-menu"> 
+                <ul>
+                    <li>
+                        <a href="/login">Logout </a>
+                    </li>
+                </ul> 
+            </div>
+        </header>
+
+        <div id="sitebody">
+            <div id="sidebar_left">sidebar_left</div>
+            <div id="content">
+                <div id = "newpost">
+                    <textarea name="textarea" id="textarea" cols="45" rows="3" style="resize:none;overflow:auto;" onkeyup="
+                        var textarea=this;
+                        var adjustedHeight=textarea.clientHeight;
+                        adjustedHeight=Math.max(textarea.scrollHeight,adjustedHeight);
+                        if (adjustedHeight>textarea.clientHeight){
+                        textarea.style.height=adjustedHeight+'px';}"></textarea>
+                    <!--<input type="button" value="post" style="width:100px;height:20px;font-size:5px">-->
+                </div>
+            </div>
+            <div id="footer">footer</div>
+        </div>
+
+    </body>
+
+</html>
